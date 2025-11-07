@@ -10,7 +10,7 @@ public:
             parent.resize(n+1);
             size.resize(n+1);
             iota(parent.begin(),parent.end(),0);
-        }
+        }D
         int find(int x) {
             return parent[x] = (parent[x] == x) ? x : find(parent[x]);
         }
